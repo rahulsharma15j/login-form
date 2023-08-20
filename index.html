@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animated Login Form | upCoding</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello Again!</h1>
+      <h2>Welcome back you have been missed!</h2>
+
+      <form class="form">
+        <div class="form-field">
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter Email or Username"
+          />
+          <span id="email-error"></span>
+        </div>
+
+        <div class="form-field">
+          <input id="password" type="password" placeholder="Password" />
+          <i onclick="toggleIcon()" class="fa-regular fa-eye-slash"></i>
+          <span id="password-error"> </span>
+        </div>
+
+        <a href="#" class="forgot-password">Forgot Passwrod</a>
+
+        <button class="login-btn" onclick="login()">Login</button>
+      </form>
+
+      <div class="divider">OR</div>
+
+      <div class="link">
+        <span>Not a member?</span>
+
+        <a href="#">Register Now</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
